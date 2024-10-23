@@ -78,12 +78,12 @@ html, body {
   
   .card h2 {
     margin: 10px 0;
-    font-size: 22px; /* Ajustar el tamaño del título */
+    font-size: 22px; 
     color: #333;
   }
   
   .card p {
-    font-size: 1.1em; /* Ajustar el tamaño de los textos */
+    font-size: 1.1em; 
     color: #555;
   }
   
