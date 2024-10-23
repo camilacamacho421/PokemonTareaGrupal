@@ -1,0 +1,91 @@
+html, body {
+    height: 100%; /* Asegura que el html y el body ocupen toda la altura de la ventana */
+    margin: 0; 
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('tenor.gif'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    text-align: center;
+    padding: 20px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+  }
+  
+  h1 {
+    color: #ff0505;
+  }
+  
+  .pokemonInput {
+    width: 300px; 
+    padding: 10px; 
+    border: 2px solid #ff0505; 
+    border-radius: 5px; 
+    margin: 10px auto; 
+  }
+  
+  button {
+    width: 300px;
+    margin: 10px auto;
+    padding: 10px 20px; 
+    background-color: #ff0505; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-weight: bold; 
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap; 
+  }
+  
+  .card {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con baja opacidad para permitir ver el GIF detrás */
+    border: 2px solid #ff0505; 
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    width: 250px; 
+    padding: 20px;
+    margin: 15px; 
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s; /
+  }
+  
+  
+  .card:hover {
+    transform: scale(1.05); 
+  }
+  
+  .card img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+  }
+  
+  .card h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .card .type {
+    background-color: #ff0505;
+    border-radius: 4px;
+    padding: 4px 8px;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold; 
+  }
