@@ -10,10 +10,12 @@ html, body {
     background-position: center; 
     background-repeat: no-repeat; 
     text-align: center;
-    padding: 20px;
+    padding: 0 20px;
     display: flex; 
     flex-direction: column; 
     justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
   }
   
   h1 {
@@ -47,42 +49,46 @@ html, body {
   }
   
   .card {
-    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con baja opacidad para permitir ver el GIF detrás */
-    border: 2px solid #ff0505; 
+    background-color: #ffecec80; /* Fondo blanco con baja opacidad */
+    border: 2px solid #ff0505;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
-    width: 250px; 
-    padding: 20px;
-    margin: 15px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 100%; 
+    max-width: 300px; /* Ancho máximo en pantallas grandes */
+    padding: 15px;
+    margin: 15px;
     position: relative;
     overflow: hidden;
-    transition: transform 0.3s; /
+    max-height: 75vh;
+    box-sizing: border-box;
+    transition: transform 0.3s;
   }
   
-  
   .card:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05); /* Efecto hover */
   }
   
   .card img {
-    width: 100%; 
-    height: auto; 
-    border-radius: 8px; 
+    width: 70%; /* La imagen ocupa el 70% del ancho de la tarjeta */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block;
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
+    border-radius: 8px;
   }
   
   .card h2 {
     margin: 10px 0;
-    font-size: 24px;
+    font-size: 22px; /* Ajustar el tamaño del título */
     color: #333;
   }
   
   .card p {
-    font-size: 16px;
+    font-size: 1.1em; /* Ajustar el tamaño de los textos */
     color: #555;
   }
   
   .card .type {
-    background-color: #ff0505;
+    background-color: #d9fa23;
     border-radius: 4px;
     padding: 4px 8px;
     display: inline-block;

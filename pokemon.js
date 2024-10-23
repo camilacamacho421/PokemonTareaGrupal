@@ -28,7 +28,7 @@ function displayPokemonDetails(pokemon) {
   const height = (pokemon.height / 10).toFixed(2); // Convertir a metros y limitar a dos cifras
   const weight = (pokemon.weight / 10).toFixed(1).replace('.', ','); // Convertir a decenas y reemplazar el punto por una coma
 
-  const types = pokemon.types.map(type => type.type.name).join(', ');
+  const types = pokemon.types.map(type => `<span class="type">${type.type.name}</span>`).join(', ');
   const imageUrl = pokemon.sprites.other['official-artwork'].front_default; // URL de la imagen
 
   const details = `
@@ -39,7 +39,7 @@ function displayPokemonDetails(pokemon) {
       <p><strong>Habilidades:</strong> ${abilities}</p>
       <p><strong>Altura:</strong> ${height} m</p>
       <p><strong>Peso:</strong> ${weight} kg</p>
-      <p><strong>Tipos:</strong> ${types}</p>
+      <p><strong>Tipo/s:</strong> ${types}</p>
     </div>
   `;
 
