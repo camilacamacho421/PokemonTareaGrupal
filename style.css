@@ -1,97 +1,102 @@
 html, body {
-    height: 100%; /* Asegura que el html y el body ocupen toda la altura de la ventana */
-    margin: 0; 
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    background-image: url('tenor.gif'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    text-align: center;
-    padding: 0 20px;
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center;
-    height: 100vh;
-    box-sizing: border-box;
-  }
-  
-  h1 {
-    color: #ff0505;
-  }
-  
-  .pokemonInput {
-    width: 300px; 
-    padding: 10px; 
-    border: 2px solid #ff0505; 
-    border-radius: 5px; 
-    margin: 10px auto; 
-  }
-  
-  button {
-    width: 300px;
-    margin: 10px auto;
-    padding: 10px 20px; 
-    background-color: #ff0505; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    font-weight: bold; 
-  }
-  
-  .card-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    flex-wrap: wrap; 
-  }
-  
-  .card {
-    background-color: #ffecec80; /* Fondo blanco con baja opacidad */
-    border: 2px solid #ff0505;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    width: 100%; 
-    max-width: 300px; /* Ancho máximo en pantallas grandes */
-    padding: 15px;
-    margin: 15px;
-    position: relative;
-    overflow: hidden;
-    max-height: 75vh;
-    box-sizing: border-box;
-    transition: transform 0.3s;
-  }
-  
-  .card:hover {
-    transform: scale(1.05); /* Efecto hover */
-  }
-  
-  .card img {
-    width: 70%; /* La imagen ocupa el 70% del ancho de la tarjeta */
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block;
-    margin: 0 auto; /* Centrar la imagen horizontalmente */
-    border-radius: 8px;
-  }
-  
-  .card h2 {
-    margin: 10px 0;
-    font-size: 22px; 
-    color: #333;
-  }
-  
-  .card p {
-    font-size: 1.1em; 
-    color: #555;
-  }
-  
-  .card .type {
-    background-color: #d9fa23;
-    border-radius: 4px;
-    padding: 4px 8px;
-    display: inline-block;
-    margin-top: 10px;
-    font-weight: bold; 
-  }
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('tenor.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5vw; /* Ajuste del padding relativo al ancho de la ventana */
+  height: 100vh;
+}
+
+h1 {
+  color: #ff0505;
+  font-size: 2rem; 
+}
+
+.pokemonInput {
+  width: 80%; 
+  max-width: 300px; /* Límite máximo para pantallas grandes */
+  padding: 0.5rem;
+  border: 2px solid #ff0505;
+  border-radius: 5px;
+  margin: 1rem auto;
+  font-size: 1rem; 
+}
+
+button {
+  width: 80%;
+  max-width: 300px;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  background-color: #ff0505;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh; /* Ajustado para ser más relativo a la altura de la ventana */
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #ffecec80;
+  border: 2px solid #ff0505;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 300px;
+  padding: 1rem;
+  margin: 1rem;
+  transition: transform 0.3s;
+  box-sizing: border-box;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 70%; 
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.card h2 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem; 
+  color: #333;
+}
+
+.card p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.card .type {
+  background-color: #d9fa23;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
